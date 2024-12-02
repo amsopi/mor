@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet"href="./styles.css">
+
+</head>
+<body>
+<div class="container">
+<div>
+<h1 class = "header_text"> OI AMORRR, te amo!!!</h1>
+<h1 class = "header_text"> Cê ama eu tb??</h1>
+</div>
+<div class="gif container">
+<img src="https://www.gifsanimados.org/data/media/1469/pucca-imagen-animada-0024.gif" border="0" alt="pucca-imagen-animada-0024" /></a>
+</div> 
+<div class = "buttons">
+<button class="btn" id = "yesButton" onclick=nextPage()">SIM AMOR</button>
+<button class="btn" id = "noButton" onmouseover="moveButton()" onclick="movebutton()">Não:(</button>
+<script>
+function nextPage() {
+window.location.href = "yes.html";
+}
+
+function moveButton() {
+var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+document.getElementById('noButton').style.left = ˋ${x}pxˋ
+document.getElementById('noButton').style.top = ˋ${y}pxˋ;
+}
+</script>
+</div>
+</div>
+
+</body>
+</hmtl>
